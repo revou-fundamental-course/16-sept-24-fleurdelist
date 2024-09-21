@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <title>Project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header>
+        <!-- icon -->
+         <div class="logo-icon">
+            <img src="https://avatars.githubusercontent.com/u/124144449?s=200&v=4"></img>
+         </div>
+
+         <!-- navigation -->
+          <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#profile">Profile</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#message">Message Us</a>
+          </nav>
+    </header>
+    <hr>
+    <main class="main">
+        <!-- welcome message -->
+        <section id="home">
+                <h1>Hi User, Welcome To Website</h1>
+                <p>Ini adalah website latihan pertama</p>
+
+            <div class="photo-group">
+            <!-- insert banner 1366 x 768 px -->
+            </div>
+        </section>
+
+        <!-- profile -->
+        <section id="profile">
+            <header>
+                <h1>Profile</h1>
+            </header>
+            
+            <article>
+                <div class="image-content">
+                    <!-- picture 1 -->
+                    <figure>
+                        <img src="https://i.ibb.co.com/NLDLz41/jakartacrop.jpg"></img>
+                         <figcaption>Jakarta</figcaption>
+                    </figure>
+
+                    <!-- picture 2 -->
+                    <figure>   
+                        <img src="https://i.ibb.co.com/ZS1wkz5/jogjaacrop.jpg"></img>
+                        <figcaption>Jogjakarta</figcaption>
+                    </figure>
+
+                    <!-- picture 3 -->
+                    <figure>
+                        <img src="https://i.ibb.co.com/VJrJS3P/bandungcrop.jpg"></img>
+                        <figcaption>Bandung</figcaption>
+                    </figure>
+                </div>
+        
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </article>
+        </section>
+
+        <!-- portfolio -->
+        <section id="portfolio">
+            <header>
+                <h1>Portfolio</h1>
+            </header>
+            <article>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+        </section>
+
+        <!-- message us -->
+         <section id="message">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <article>
+            <!-- form -->
+                <form action="/submit" method="post">
+                    <table>
+                    <tr>
+                        <td><label for="form-name" id="form-name">Nama</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="name" id="name" placeholder="nama" required></input></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="form-dob" id="form-dob">Tanggal Lahir</label></td>
+                        <td>:</td>
+                        <td><input type="date" name="dob" id="dob" value="dob" requred></input></td>
+                    </tr>
+
+                    <tr>             
+                        <td><label for="form-gender" id="form-gender">Jenis Kelamin</label></td>
+                        <td>:</td>
+                        <td><input type="radio" name="gender" id="male" value="male" required>Laki-laki</input>
+                        <input type="radio" name="gender" id="female" value="female" required>Perempuan</input></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="form-message" id="form-message">Pesan:</label></td>
+                        <td>:</td>
+                        <td><textarea name="message" id="message" rows="4" cols="30" placeholder="pesan" required></textarea></td>
+                    </tr>
+                    </table>
+
+                    <button type="button">Submit</button>
+                </form>
+
+            <!-- live message -->
+            <p>Kotak live message</p>
+            </article>
+    </main>
+    <hr>
+
+    <footer>
+        <p>Created by fleurdelist</p>
+    </footer>
+</html>

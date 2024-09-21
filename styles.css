@@ -1,0 +1,95 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-icon, .logo-icon > img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50vh;
+    display: inline;
+    margin-left: 20px;
+}
+
+.navigation {
+    margin-right: 80px;
+    display: flex;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navigation > a {
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content:center;
+}
+
+
+h1 {
+    font-size: 8vh;
+}
+
+p, label, input {
+    margin-top: 5px;
+    padding: 5px 5px 5px 0px;
+    text-align: justify;
+    font-size: 3vh;
+}
+
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 1200px;
+}
+
+article, .image-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article > p {
+    display: inline-flex;
+}
+
+figure {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+figure > img {
+    border-radius: 50%;
+    width: 100px;
+    margin: 0;
+    border: 1px solid black;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+footer > p {
+    padding: 10px;
+    text-align: right;
+}
+
+@media (max-width: 800px) {
+    .navigation {
+        display: flex;
+        flex-direction: column; /* Vertical layout */
+    }
+
+    .main {
+        padding: 5px;
+        margin: 30px;
+    }
+}
