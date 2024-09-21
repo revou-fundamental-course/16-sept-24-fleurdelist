@@ -90,37 +90,40 @@
             <!-- form -->
                 <form action="/submit" method="post">
                     <table>
-                    <tr>
-                        <td><label for="form-name" id="form-name">Nama</label></td>
-                        <td>:</td>
-                        <td><input type="text" name="name" id="name" placeholder="nama" required></input></td>
-                    </tr>
+                        <tr>
+                            <td><label for="name">Nama</label></td>
+                            <td>:</td>
+                            <td><input type="text" name="name" id="name" placeholder="nama" required></td>
+                        </tr>
 
-                    <tr>
-                        <td><label for="form-dob" id="form-dob">Tanggal Lahir</label></td>
-                        <td>:</td>
-                        <td><input type="date" name="dob" id="dob" value="dob" requred></input></td>
-                    </tr>
+                        <tr>
+                            <td><label for="dob">Tanggal Lahir</label></td>
+                            <td>:</td>
+                            <td><input type="date" name="dob" id="dob" value="dob" requred></td>
+                        </tr>
 
-                    <tr>             
-                        <td><label for="form-gender" id="form-gender">Jenis Kelamin</label></td>
-                        <td>:</td>
-                        <td><input type="radio" name="gender" id="male" value="male" required>Laki-laki</input>
-                        <input type="radio" name="gender" id="female" value="female" required>Perempuan</input></td>
-                    </tr>
+                        <tr>             
+                            <td><label for="gender">Jenis Kelamin</label></td>
+                            <td>:</td>
+                            <td><label for="male"><input type="radio" name="gender" id="male" value="male" required>Laki-laki</label>
+                            <label for="female"><input type="radio" name="gender" id="female" value="female" required>Perempuan</label></td>
+                        </tr>
 
-                    <tr>
-                        <td><label for="form-message" id="form-message">Pesan:</label></td>
-                        <td>:</td>
-                        <td><textarea name="message" id="message" rows="4" cols="30" placeholder="pesan" required></textarea></td>
-                    </tr>
+                        <tr>
+                            <td><label for="message">Pesan:</label></td>
+                            <td>:</td>
+                            <td><textarea id="message" name="message" rows="4" cols="30" placeholder="pesan" required></textarea></td>
+                        </tr>
                     </table>
-
-                    <button type="button">Submit</button>
+                    <button type="button" style="width: 350px;">Submit</button>
                 </form>
-
+            <br>
             <!-- live message -->
-            <p>Kotak live message</p>
+            <table style="border: 1px solid black; width: 400px; height: 400px; text-align: center;">
+                <tr>
+                    <td>Kotak live message</td>
+                </tr>
+            </table>
             </article>
     </main>
     <hr>
