@@ -3,14 +3,13 @@
     <meta charset="utf-8">
     <head>
         <title>Project</title>
-        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="\css\styles.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <header>
         <!-- icon -->
          <div class="logo-icon">
-            <img src="https://avatars.githubusercontent.com/u/124144449?s=200&v=4"></img>
+            <img src="assets/logo.jpg"></img>
          </div>
 
          <!-- navigation -->
@@ -25,11 +24,13 @@
     <main class="main">
         <!-- welcome message -->
         <section id="home">
-                <h1>Hi User, Welcome To Website</h1>
+                <h1>Hi <span id="username">user</span>, Welcome To Website</h1>
+                <button id="changeName">Ganti</button>
                 <p>Ini adalah website latihan pertama</p>
 
-            <div class="photo-group">
-            <!-- insert banner 1366 x 768 px -->
+            <div class="photo-banner photo-1"></div>
+            <div class="photo-banner photo-2"></div>
+            <div class="photo-banner photo-3"></div>
             </div>
         </section>
 
@@ -43,19 +44,19 @@
                 <div class="image-content">
                     <!-- picture 1 -->
                     <figure>
-                        <img src="https://i.ibb.co.com/NLDLz41/jakartacrop.jpg"></img>
+                        <img src="assets/jakarta.jpg"></img>
                          <figcaption>Jakarta</figcaption>
                     </figure>
 
                     <!-- picture 2 -->
                     <figure>   
-                        <img src="https://i.ibb.co.com/ZS1wkz5/jogjaacrop.jpg"></img>
+                        <img src="assets/jogja.jpg"></img>
                         <figcaption>Jogjakarta</figcaption>
                     </figure>
 
                     <!-- picture 3 -->
                     <figure>
-                        <img src="https://i.ibb.co.com/VJrJS3P/bandungcrop.jpg"></img>
+                        <img src="assets/bandung.jpg"></img>
                         <figcaption>Bandung</figcaption>
                     </figure>
                 </div>
@@ -88,7 +89,7 @@
 
             <article>
             <!-- form -->
-                <form action="/submit" method="post">
+                <form onsubmit="return false;">
                     <table>
                         <tr>
                             <td><label for="name">Nama</label></td>
@@ -99,7 +100,7 @@
                         <tr>
                             <td><label for="dob">Tanggal Lahir</label></td>
                             <td>:</td>
-                            <td><input type="date" name="dob" id="dob" value="dob" requred></td>
+                            <td><input type="date" name="dob" id="dob" value="dob" required></td>
                         </tr>
 
                         <tr>             
@@ -125,6 +126,7 @@
                 </tr>
             </table>
             </article>
+            <script src="js/script.js"></script>
     </main>
     <hr>
 

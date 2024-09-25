@@ -31,6 +31,23 @@ header {
     justify-content:center;
 }
 
+.photo-banner {
+    height: 480px;
+    background-size: cover;
+    background-position:center;
+}
+
+.photo-1 {
+    background-image: url(../assets/banner-1.jpg)
+}
+
+.photo-2 {
+    background-image: url(../assets/banner-2.jpg)
+}
+
+.photo-3 {
+    background-image: url(../assets/banner-3.jpg)
+}
 
 h1 {
     font-size: 8vh;
@@ -83,10 +100,21 @@ footer > p {
     text-align: right;
 }
 
-@media (max-width: 800px) {
-    .navigation {
+@media (max-width: 600px) {
+    .logo-icon, .logo-icon > img {
+        max-width: 20vh;
+        max-height: 20vh;
+        border-radius: 50vh;
         display: flex;
-        flex-direction: column; /* Vertical layout */
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .navigation {
+        display: block;
+        align-content:center;
+        width: 500vh;
+        margin-top: 4vh;
     }
 
     .main {
