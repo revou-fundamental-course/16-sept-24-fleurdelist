@@ -103,8 +103,8 @@ input {
     margin-bottom: 0;
 }
 
-.live-message > tr {
-    height: 3vh;
+.live-message > span {
+    margin-top:-20px;
 }
 
 .live-message > p {

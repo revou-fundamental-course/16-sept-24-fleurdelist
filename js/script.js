@@ -74,16 +74,14 @@ function liveMessage() {
 
     const formMessage = document.getElementById("form-message").value;
 
+    //adding time
+    const date = new Date();
+
+    document.getElementById("display-date").innerHTML = date;
     document.getElementById("display-name").innerHTML = formDisplayName;
     document.getElementById("display-dob").innerHTML = formDOB;
     document.getElementById("display-gender").innerHTML = formGender;
     document.getElementById("display-message").innerHTML = formMessage;
-    
-    console.log("Name:", formDisplayName);
-    console.log("DOB:", formDOB);
-    console.log("Gender:", formGender);
-    console.log("Message:", formMessage);
-
 }
 
 document.getElementById("formResult").addEventListener("click", function() {
