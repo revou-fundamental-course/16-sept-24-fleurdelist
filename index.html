@@ -94,37 +94,49 @@
                         <tr>
                             <td><label for="name">Nama</label></td>
                             <td>:</td>
-                            <td><input type="text" name="name" id="name" placeholder="nama" required></td>
+                            <td><input type="text" name="name" id="form-name" placeholder="nama"></td>
                         </tr>
 
                         <tr>
                             <td><label for="dob">Tanggal Lahir</label></td>
                             <td>:</td>
-                            <td><input type="date" name="dob" id="dob" value="dob" required></td>
+                            <td><input type="date" name="dob" id="form-dob" value="dob"></td>
                         </tr>
 
                         <tr>             
                             <td><label for="gender">Jenis Kelamin</label></td>
                             <td>:</td>
-                            <td><label for="male"><input type="radio" name="gender" id="male" value="male" required>Laki-laki</label>
-                            <label for="female"><input type="radio" name="gender" id="female" value="female" required>Perempuan</label></td>
+                            <td><label for="male"><input type="radio" name="gender" id="form-male" value="male">Laki-laki</label>
+                            <label for="female"><input type="radio" name="gender" id="form-female" value="female">Perempuan</label></td>
                         </tr>
 
                         <tr>
                             <td><label for="message">Pesan:</label></td>
                             <td>:</td>
-                            <td><textarea id="message" name="message" rows="4" cols="30" placeholder="pesan" required></textarea></td>
+                            <td><textarea id="form-message" name="message" rows="4" cols="30" placeholder="pesan"></textarea></td>
                         </tr>
                     </table>
-                    <button type="button" style="width: 350px;">Submit</button>
+                    <button id="formResult" style="width: 400px;">Submit</button>
                 </form>
             <br>
+            <br>
             <!-- live message -->
-            <table style="border: 1px solid black; width: 400px; height: 400px; text-align: center;">
-                <tr>
-                    <td>Kotak live message</td>
-                </tr>
-            </table>
+            <div class="live-message">
+                <table>
+                    <tr>
+                        <td><span style="font-weight:bold;">Nama: </span><span id="display-name"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight:bold;">DOB: </span><span id="display-dob"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight:bold;">Jenis kelamin: </span><span id="display-gender"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight:bold;">Pesan: </span><span id="display-message"></span></td>
+                    </tr>
+                </table>
+            </div>
             </article>
             <script src="js/script.js"></script>
     </main>

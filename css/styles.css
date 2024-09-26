@@ -95,6 +95,23 @@ input {
     padding: 3px;
 }
 
+.live-message > table {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.live-message > tr {
+    height: 3vh;
+}
+
+.live-message > p {
+    display: inline;
+    text-align: left;
+}
+
 footer > p {
     padding: 10px;
     text-align: right;

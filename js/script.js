@@ -1,6 +1,6 @@
+//show name
 function promptName() {
     let name = prompt("Siapakah namamu?", "");
-    console.log(name)
     document.getElementById("username").innerHTML = name
 }
 
@@ -12,17 +12,7 @@ document.getElementById("changeName").addEventListener("click", function() {
     promptName();
 })
 
-function validateForm() {
-    let inputName = document.getElementById("input-name").value;
-    if (inputName == "") {
-        alert("Inputan kosong");
-    }
-    else {
-        document.getElementById("result-form").innerHTML = inputName;
-        alert("Sukses submit form!")
-    }
-}
-
+//banner autoslide
 let indexSlide = 1;
 showSlide(1 );
 
@@ -46,3 +36,58 @@ function showSlide(index) {
 }
 
 setInterval(() => nextSlide(1), 3000)
+
+
+//form validation
+function validateForm() {
+    let inputName = document.getElementById("form-name").value;
+    let inputDOB = document.getElementById("form-dob").value;
+
+    let inputGender = document.querySelector('input[name="gender"]:checked');
+    let genderValue = inputGender ? inputGender.value : ""; // Get value if checked, otherwise empty string
+
+    let inputMessage = document.getElementById("form-message").value;
+    if (inputName === "" || inputDOB === "" || genderValue === "" || inputMessage === "") {
+        alert("Harap mengisi semua formulir");
+        return false;
+    }
+    else {
+        alert("Sukses submit form!");
+        return true;
+    }
+}
+
+function liveMessage() {
+    //get value
+    const formDisplayName = document.getElementById("form-name").value;
+    const formDOB = document.getElementById("form-dob").value;
+
+    //selected gender
+    const genderElements = document.getElementsByName("gender");
+    let formGender = "";
+    for (const gender of genderElements) {
+        if (gender.checked) {
+            formGender = gender.value;
+            break;
+        }
+    }
+
+    const formMessage = document.getElementById("form-message").value;
+
+    document.getElementById("display-name").innerHTML = formDisplayName;
+    document.getElementById("display-dob").innerHTML = formDOB;
+    document.getElementById("display-gender").innerHTML = formGender;
+    document.getElementById("display-message").innerHTML = formMessage;
+    
+    console.log("Name:", formDisplayName);
+    console.log("DOB:", formDOB);
+    console.log("Gender:", formGender);
+    console.log("Message:", formMessage);
+
+}
+
+document.getElementById("formResult").addEventListener("click", function() {
+    if (validateForm()) {
+        liveMessage();
+    }
+})
